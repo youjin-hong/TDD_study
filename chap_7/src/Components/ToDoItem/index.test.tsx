@@ -1,7 +1,5 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import 'jest-styled-components';
-
 import { ToDoItem } from './index';
 
 describe('<Input />', () => {
@@ -17,7 +15,7 @@ describe('<Input />', () => {
   });
 
   it('clicks the delete button', () => {
-    const handleClick = jest.fn();
+    const handleClick = vi.fn();
     render(<ToDoItem label="default value" onDelete={handleClick} />);
 
     const deleteButton = screen.getByText('삭제');

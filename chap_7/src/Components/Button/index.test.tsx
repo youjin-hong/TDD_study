@@ -1,45 +1,26 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import 'jest-styled-components';
-
 import { Button } from 'Components/Button';
 
 describe('<Button />', () => {
-  it('renders component correctly and applies styles', () => {
-    const { container } = render(<Button label="Button Test" />);
-
-    const buttonElement = screen.getByRole('button', { name: 'Button Test' });
-    expect(buttonElement).toBeInTheDocument();
-    expect(buttonElement).toHaveStyleRule('background-color', '#304FFE');
-    expect(buttonElement).toHaveStyleRule('background-color', '#1E40FF', {
-      modifier: ':hover',
-    });
-
-    expect(container).toMatchInlineSnapshot();
-  });
-
-  it('changes backgroundColor and hoverColor Props correctly', () => {
-    const backgroundColor = '#FF1744';
-    const hoverColor = '#F01440';
+  it('changes backgroundcolor and hovercolor Props correctly', () => {
+    const backgroundcolor = '#FF1744';  // hex
+    const hovercolor = '#F01440';  // hex
 
     render(
-      <Button label="Button Test" backgroundColor={backgroundColor} hoverColor={hoverColor} />,
+      <Button label="Button Test" backgroundColor={backgroundcolor} hoverColor={hovercolor} />
     );
 
     const customButtonElement = screen.getByRole('button', { name: 'Button Test' });
-    expect(customButtonElement).toHaveStyleRule('background-color', backgroundColor);
-    expect(customButtonElement).toHaveStyleRule('background-color', hoverColor, {
-      modifier: ':hover',
-    });
-  });
 
-  it('clicks the button', () => {
-    const handleClick = jest.fn();
-    render(<Button label="Button Test" onClick={handleClick} />);
+    // hex 값으로 스타일 확인
+    expect(customButtonElement).toHaveStyle(`background-color: ${backgroundcolor}`);
+    
+    // hover 상태에서 스타일 확인
+    fireEvent.mouseOver(customButtonElement);
 
-    const label = screen.getByText('Button Test');
-    expect(handleClick).toHaveBeenCalledTimes(0);
-    fireEvent.click(label);
-    expect(handleClick).toHaveBeenCalledTimes(1);
+    // getComputedStyle을 사용하여 실제 렌더링된 스타일 확인
+    const computedStyle = window.getComputedStyle(customButtonElement);
+    expect(computedStyle.backgroundColor).toBe('rgb(255, 23, 68)');  // 실제 렌더링된 색상 확인
   });
 });

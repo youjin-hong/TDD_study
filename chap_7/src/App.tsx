@@ -1,6 +1,7 @@
+import { Button, Input, ToDoItem } from "Components/index";
 import React, { useState } from "react";
 import Styled from "styled-components";
-import { Button, Input, ToDoItem } from "Components";
+
 
 const Container = Styled.div`
   min-height: 100vh;
@@ -47,7 +48,7 @@ function App() {
   return (
     <Container>
       <Contents>
-        <ToDoListContainer>
+        <ToDoListContainer data-testid="toDoList">
           {toDoList.map((item, index) => (
             <ToDoItem
               key={item}

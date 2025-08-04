@@ -1,18 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Input /> renders component correctly 1`] = `
-.c0 {
-  flex: 1;
-  font-size: 16px;
-  padding: 10px 10px;
-  border-radius: 8px;
-  border: 1px solid #BDBDBD;
-  outline: none;
-}
-
+exports[`<Input /> > renders component correctly 1`] = `
 <div>
   <input
-    class="c0"
+    class="sc-bRKDuR jFnLXe"
     value="default value"
   />
 </div>

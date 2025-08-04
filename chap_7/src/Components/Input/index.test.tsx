@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import 'jest-styled-components';
 
 import { Input } from 'Components/Input';
 
@@ -15,14 +14,14 @@ describe('<Input />', () => {
   });
 
   it('renders placeholder correctly', () => {
-    render(<Input placeholders="default placeholder" />);
+    render(<Input placeholders="default placeholder" />);  
 
     const input = screen.getByPlaceholderText('default placeholder');
     expect(input).toBeInTheDocument();
   });
 
   it('changes the data', () => {
-    render(<Input placeholders="default placeholder" />);
+    render(<Input placeholders="default placeholder" />);  
 
     const input = screen.getByPlaceholderText('default placeholder') as HTMLInputElement;
     fireEvent.change(input, { target: { value: 'study react' } });

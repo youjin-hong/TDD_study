@@ -1,19 +1,26 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Input /> renders component correctly 1`] = `
-.c0 {
-  flex: 1;
-  font-size: 16px;
-  padding: 10px 10px;
-  border-radius: 8px;
-  border: 1px solid #BDBDBD;
-  outline: none;
-}
-
+exports[`<Input /> > renders component correctly 1`] = `
 <div>
-  <input
-    class="c0"
-    value="default value"
-  />
+  <div
+    class="sc-fhHczv ipJXjs"
+  >
+    <div
+      class="sc-ggWZvA jahAZR"
+    >
+      default value
+    </div>
+    <button
+      backgroundcolor="#FF1744"
+      class="sc-bRKDuR QHggg"
+      hovercolor="#F01440"
+    >
+      <div
+        class="sc-hvigdm WvKZY"
+      >
+        삭제
+      </div>
+    </button>
+  </div>
 </div>
 `;
