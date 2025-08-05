@@ -3,7 +3,7 @@
 exports[`<Input /> > renders component correctly 1`] = `
 <div>
   <div
-    class="sc-fhHczv ipJXjs"
+    class="sc-fhHczv grQgxZ"
   >
     <div
       class="sc-ggWZvA jahAZR"
@@ -11,15 +11,11 @@ exports[`<Input /> > renders component correctly 1`] = `
       default value
     </div>
     <button
-      backgroundcolor="#FF1744"
       class="sc-bRKDuR QHggg"
-      hovercolor="#F01440"
     >
-      <div
-        class="sc-hvigdm WvKZY"
-      >
+      <label>
         삭제
-      </div>
+      </label>
     </button>
   </div>
 </div>

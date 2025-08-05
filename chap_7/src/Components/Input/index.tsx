@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Styled from "styled-components";
 
 interface Props {
-  readonly placeholders?: string;
+  readonly placeholder?: string;
   readonly value?: string;
   readonly onChange?: (text: string) => void;
 }
@@ -16,16 +16,33 @@ const InputBox = Styled.input`
   outline: none;
 `;
 
-export const Input = ({ placeholders, value, onChange }: Props) => {
-  return (
-    <InputBox
-      placeholder={placeholders}
+export class Input extends Component<Props> {
+  render() {
+    const {placeholder, value, onChange} = this.props;
+    return (
+      <InputBox
+      placeholder={placeholder}
       value={value}
       onChange={(event) => {
-        if (typeof onChange === "function") {
-          onChange(event.target.value);
+        if (onChange) {
+          onChange(event.target.value)
         }
       }}
-    />
-  );
-};
+      />
+    )
+  }
+}
+
+// export const Input = ({ placeholders, value, onChange }: Props) => {
+//   return (
+//     <InputBox
+//       placeholder={placeholders}
+//       value={value}
+//       onChange={(event) => {
+//         if (typeof onChange === "function") {
+//           onChange(event.target.value);
+//         }
+//       }}
+//     />
+//   );
+// };

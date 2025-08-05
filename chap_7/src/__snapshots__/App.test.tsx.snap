@@ -15,17 +15,14 @@ exports[`<App /> > renders component correctly 1`] = `
       <input
         class="sc-bRKDuR jFnLXe"
         placeholder="할 일을 입력해 주세요."
+        value=""
       />
       <button
-        backgroundcolor="#304FFE"
         class="sc-hvigdm dQwfum"
-        hovercolor="#1E40FF"
       >
-        <div
-          class="sc-fhHczv dCBYiE"
-        >
+        <label>
           추가
-        </div>
+        </label>
       </button>
     </div>
   </div>

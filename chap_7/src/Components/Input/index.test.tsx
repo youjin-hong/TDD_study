@@ -14,14 +14,14 @@ describe('<Input />', () => {
   });
 
   it('renders placeholder correctly', () => {
-    render(<Input placeholders="default placeholder" />);  
+    render(<Input placeholder="default placeholder" />);  
 
     const input = screen.getByPlaceholderText('default placeholder');
     expect(input).toBeInTheDocument();
   });
 
   it('changes the data', () => {
-    render(<Input placeholders="default placeholder" />);  
+    render(<Input placeholder="default placeholder" />);  
 
     const input = screen.getByPlaceholderText('default placeholder') as HTMLInputElement;
     fireEvent.change(input, { target: { value: 'study react' } });
