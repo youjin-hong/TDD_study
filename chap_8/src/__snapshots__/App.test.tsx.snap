@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<App /> > renders component correctly 1`] = `
+<div>
+  <div
+    class="sc-jwTyAe caNZiT"
+  >
+    <div
+      class="sc-hjsuWn iGbHEt"
+    >
+      <div
+        class="sc-jJLAfE gimIwI"
+        data-testid="toDoList"
+      />
+      <input
+        class="sc-bRKDuR jFnLXe"
+        placeholder="할 일을 입력해 주세요."
+      />
+      <button
+        class="sc-hvigdm kdEsRq"
+      >
+        <div
+          class="sc-fhHczv dCBYiE"
+        >
+          추가
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
