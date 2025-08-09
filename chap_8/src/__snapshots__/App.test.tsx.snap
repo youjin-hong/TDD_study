@@ -3,28 +3,33 @@
 exports[`<App /> > renders component correctly 1`] = `
 <div>
   <div
-    class="sc-jwTyAe caNZiT"
+    class="sc-jJLAfE cOBZuh"
   >
     <div
-      class="sc-hjsuWn iGbHEt"
+      class="sc-hwkwBN hFfQND"
     >
       <div
-        class="sc-jJLAfE gimIwI"
+        class="sc-hjsuWn eDDHQy"
         data-testid="toDoList"
       />
-      <input
-        class="sc-bRKDuR jFnLXe"
-        placeholder="할 일을 입력해 주세요."
-      />
-      <button
-        class="sc-hvigdm kdEsRq"
+      <div
+        class="sc-ggWZvA loKauX"
       >
-        <div
-          class="sc-fhHczv dCBYiE"
+        <input
+          class="sc-fhHczv hdDvIH"
+          placeholder="할 일을 입력해 주세요."
+          value=""
+        />
+        <button
+          class="sc-bRKDuR izUgMv"
         >
-          추가
-        </div>
-      </button>
+          <div
+            class="sc-hvigdm WvKZY"
+          >
+            추가
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
