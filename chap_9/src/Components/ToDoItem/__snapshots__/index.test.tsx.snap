@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Input /> > renders component correctly 1`] = `
+<div>
+  <div
+    class="sc-fhHczv grQgxZ"
+  >
+    <div
+      class="sc-ggWZvA jahAZR"
+    >
+      default value
+    </div>
+    <button
+      class="sc-bRKDuR dunOfA"
+    >
+      <div
+        class="sc-hvigdm WvKZY"
+      >
+        삭제
+      </div>
+    </button>
+  </div>
+</div>
+`;

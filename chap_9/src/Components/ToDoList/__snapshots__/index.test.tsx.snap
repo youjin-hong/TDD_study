@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ToDoList /> > renders component correctly 1`] = `
+<div>
+  <div
+    class="sc-dTvVRJ AQmon"
+    data-testid="toDoList"
+  />
+</div>
+`;
