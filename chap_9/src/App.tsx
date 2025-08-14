@@ -18,9 +18,7 @@ function App() {
     <ToDoListProvider>
       <Container>
         <Routes>
-          <Route path="/">
-            <List />
-          </Route>
+          <Route path="/" element={<List />} />
         </Routes>
       </Container>
     </ToDoListProvider>
