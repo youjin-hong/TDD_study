@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToDoListProvider } from 'src/Contexts/ToDoList';
-import { List } from 'src/Pages';
+import { Detail, List } from 'src/Pages';
 import { Add } from 'src/Pages/Add';
 import Styled from 'styled-components';
 
@@ -19,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<List />} />
           <Route path="/add" element={<Add />} />
+          <Route path="/detail/:id" element={<Detail />} />
         </Routes>
       </Container>
     </ToDoListProvider>
