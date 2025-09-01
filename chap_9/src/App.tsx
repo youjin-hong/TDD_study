@@ -1,3 +1,4 @@
+import { PageHeader } from 'Components/PageHeader';
 import { Route, Routes } from 'react-router-dom';
 import { ToDoListProvider } from 'src/Contexts/ToDoList';
 import { Detail, List } from 'src/Pages';
@@ -16,6 +17,7 @@ function App() {
   return (
     <ToDoListProvider>
       <Container>
+        <PageHeader />
         <Routes>
           <Route path="/" element={<List />} />
           <Route path="/add" element={<Add />} />
